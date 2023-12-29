@@ -1,0 +1,103 @@
+{{> header}}
+
+<main>
+
+    <article class="article-additional">
+
+        <section class="section-additional-item">
+
+            <h3>Место игр и тренировок</h3>
+            <p>Стадион "Восход"</p>
+            <p>Город Рязань, Пушкина 66</p>
+            <img src="img/arena.jpg" class="item-additional-img">
+
+        </section>
+        
+        <section class="section-additional-item">
+
+            <h3>Тренировки</h3>
+            <p>Понедельник, Среда, Пятница 14:00-16:00</p>
+            <p>500 рублей - 1 тренировка</p>
+            <button type="button" 
+                class="btn btn-warning" 
+                data-toggle="modal" 
+                data-target="#modal-price"
+            >
+            Рассчитать стоимость</button>
+
+        </section>
+
+        <section class="section-additional-item">
+
+            <h3>Категории игроков</h3>
+            <p>Юноши, девушки</p>
+            <p>12 - 25 лет</p>
+
+        </section>
+
+    </article>
+
+</main>
+
+<div class="modal fade" tabindex="-1" 
+    role="dialog" id="modal-price" 
+    aria-hidden="true" aria-labelledby="exampleModalLabel"
+>
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Подробнее</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+                <form action="#" method="get" id="orderForm">
+                    
+                    <div class="price">
+                        <label for="name" class="label">
+                            Введите своё имя
+                        </label>
+                        <input type="name" id="inp1" class="input-xlarge" required="required">
+                    </div>
+
+                    <div class="price">
+                        <label for="date" class="label" >
+                            Выберите свою дату рождения
+                        </label>
+                        <input type="date" id="inp2">
+                    </div>
+
+                    <div class="price">
+                        <label for="number" class="label">
+                            Введите желаемое количество тренировок
+                        </label>
+                        <input type="number" id="inp3" class="input-xlarge" required="required">
+                    </div>
+
+                    <div class="price">
+                        <label for="email" class="label" >
+                            Введите свой email
+                        </label>
+                        <input type="email" id="inp4" class="input-xlarge" required="required">
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" id="submit">Рассчитать</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>                            
+                    </div>
+                
+                </form>
+            </div>
+            
+
+        
+        </div>
+    </div>
+
+</div>
+
+<script src="js/index.js"></script>

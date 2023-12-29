@@ -1,0 +1,144 @@
+.main-index {
+    height: 75vh;
+}
+
+.article-index {
+    width: inherit;
+    height: inherit;
+    /* box-shadow: 10px 2px 75px rgb(0, 0, 0); */
+    /* background-color:  rgba(255, 255, 255, 0.1); */
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.section-item {
+    background-color: white;
+    height: 45%;
+    margin: 1% 5%;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.item-header {
+    margin: 4px;
+}
+
+.item-img {
+    height: 60%;
+}
+
+.btn {
+    order: 999;
+    background-color: rgb(185, 185, 185);
+    border: 1px solid black;
+    margin-top: 2%;
+    /* width: 25%; */
+    font-size: smaller;
+    text-align: center;
+    padding: 3px;
+    width: 100px;
+    height: 30px;
+}
+
+.statistic {
+    background-color: yellow;
+    flex-direction: column;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    color: red;
+    height: 30%;
+    width: 75%;
+    /* font-size: medium; */
+    /* font-weight: bold; */
+    text-align: center;
+}
+.section-item h3 {
+    font-size: large;
+}
+
+
+@media screen and (max-width: 1280px) {
+
+    .item-img {
+        height: 50%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .statistic {
+        font-size: larger;
+        height: 40%;
+    }
+    .item-img {
+        height: 48%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .section-item {
+        background-color: white;
+        height: 30vh;
+        margin: 2%;
+        width: 23%;
+    }
+
+    .statistic {
+        font-size: large;
+    }
+
+    .item-img {
+        max-height: 90vh;
+    }
+    
+    .section-item small {
+        font-size: small;
+    }
+
+    .section-item h3 {
+        font-size: large;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .section-item {
+        flex-direction: column;
+        justify-content: space-around;
+        /* height: 10%; */
+    }
+
+    .section-item small {
+        font-size: xx-small;
+    }
+
+    .statistic {
+        height: 60%;
+    }
+
+    .item-img {
+        height: 45%;
+    }
+    
+    .section-item h3 {
+        font-size: 12px;
+    }
+    .btn {
+        width: 70px;
+        height: 30px;
+        font-size: xx-small;
+    }
+
+}
