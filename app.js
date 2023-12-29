@@ -24,7 +24,7 @@ passport.use(new JwtStrategy(opts,(jwt_payload, done) => {
 // создаем парсер для данных в формате json
 const bodyParser = express.json();
 
-//парсер URL – разбирает URL
+//парсер URL – разбирает URL 
 //создаем пул подключений к нашему серверу
 const pool = mysql.createPool({
     connectionLimit: 5,
